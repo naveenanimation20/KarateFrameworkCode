@@ -1,0 +1,90 @@
+19:18:08.812 request:
+1 > GET https://gorest.co.in/public/v1/users/30
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: gorest.co.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_261)
+
+19:18:09.097 response time in milliseconds: 281.06
+1 < 200
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 20 Dec 2021 13:48:09 GMT
+1 < ETag: W/"22ef31971731ae75bd067178b0f96d6d"
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Server: nginx
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: [Accept-Encoding, Origin]
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Request-Id: cf9c2a06-74c3-41b1-b0be-401f48293f26
+1 < X-Runtime: 0.003746
+1 < X-XSS-Protection: 0
+{"meta":null,"data":{"id":30,"name":"Ainath","email":"ainath@gmail.com","gender":"male","status":"inactive"}}
+
+19:18:09.101 [print] {
+  "data": {
+    "gender": "male",
+    "name": "Ainath",
+    "id": 30,
+    "email": "ainath@gmail.com",
+    "status": "inactive"
+  },
+  "meta": null
+}
+
+19:18:09.101 [print] {
+  "data": {
+    "gender": "male",
+    "name": "Ainath",
+    "id": 30,
+    "email": "ainath@gmail.com",
+    "status": "inactive"
+  },
+  "meta": null
+}
+
+19:18:09.114 [print] Ainath
+19:18:09.130 request:
+1 > GET https://gorest.co.in/public/v1/users/1
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: gorest.co.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_261)
+
+19:18:09.185 response time in milliseconds: 52.87
+1 < 404
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 20 Dec 2021 13:48:09 GMT
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Server: nginx
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: [Accept-Encoding, Origin]
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Request-Id: d2ab28e6-c8c6-47c5-9a12-40439c0caf69
+1 < X-Runtime: 0.003381
+1 < X-XSS-Protection: 0
+{"meta":null,"data":{"message":"Resource not found"}}
+
+IGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Request-Id: 1ce5b760-b388-4e45-9d98-9c9e77debf08
+1 < X-Runtime: 0.003124
+1 < X-XSS-Protection: 0
+{"meta":null,"data":{"message":"Resource not found"}}
+
+4
+1 < X-Runtime: 0.003428
+1 < X-XSS-Protection: 0
+{"meta":null,"data":{"message":"Resource not found"}}
+

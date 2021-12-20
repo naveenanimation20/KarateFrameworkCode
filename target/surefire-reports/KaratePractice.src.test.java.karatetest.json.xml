@@ -1,0 +1,28 @@
+<testsuite failures="1" name="KaratePractice/src/test/java/karatetest/json.feature" skipped="0" tests="2" time="0.079935">
+  <testcase classname="KaratePractice.src.test.java.karatetest.json" name="defining JSON object and print it" time="0.052443">
+    <system-out>* def jsonObject = ........................................................ passed
+* print jsonObject[1].name, jsonObject[1].phone ........................... passed
+* match jsonObject[0].name contains 'jack' ................................ passed
+* print jsonObject ........................................................ passed</system-out>
+  </testcase>
+  <testcase classname="KaratePractice.src.test.java.karatetest.json" name="defining JSON object and print it" time="0.027492">
+    <failure message="json.feature:47 - path: $[1].value, actual: 'Open', expected: 'New', reason: not equal">* def jsonObject = ........................................................ passed
+* print jsonObject[1].name, jsonObject[1].phone ........................... passed
+* match jsonObject[0].name contains 'jack' ................................ passed
+* print jsonObject ........................................................ passed
+* def jsonObject = ........................................................ passed
+* print jsonObject.menu.id ................................................ passed
+* print jsonObject.menu.value ............................................. passed
+* print jsonObject.menu.popup ............................................. passed
+* print jsonObject.menu.popup.menuitem .................................... passed
+* print jsonObject.menu.popup.menuitem[0] ................................. passed
+* print jsonObject.menu.popup.menuitem[0].value ........................... passed
+* print jsonObject.menu.popup.menuitem[0].onclick ......................... passed
+* def expectedSkills = "New" .............................................. passed
+* match each jsonObject.menu.popup.menuitem contains { value: '#(expectedSkills)' } . failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: json.feature:47 - path: $[1].value, actual: 'Open', expected: 'New', reason: not equal
+	at ✽.* match each jsonObject.menu.popup.menuitem contains { value: '#(expectedSkills)' } (json.feature:47)</failure>
+  </testcase>
+</testsuite>
