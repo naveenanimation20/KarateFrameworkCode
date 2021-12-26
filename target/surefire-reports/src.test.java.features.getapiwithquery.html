@@ -19,7 +19,7 @@
     <script src="res/bootstrap.min.js" type="text/javascript"></script>
     <script src="res/karate-report.js" type="text/javascript"></script>
     
-<title>src.test.java.features.getapi</title>
+<title>src.test.java.features.getapiwithquery</title>
   
 </head>
   
@@ -47,14 +47,14 @@
         
 <div id="nav-type">Scenarios</div>         
         
-<div id="nav-date">2021-12-21 09:33:59 PM</div>        
+<div id="nav-date">2021-12-21 09:54:44 PM</div>        
       
 <div class="nav-container">
 <div class="nav-item passed">
-<a href="#[1:19]">[1:19] get user details - query </a>
+<a href="#[1:3]">[1:3] get all active users </a>
 </div>
 <div class="nav-item passed">
-<a href="#[2:26]">[2:26] get user details - query1 </a>
+<a href="#[2:12]">[2:12] get all active users and get the count </a>
 </div>
 </div>
 </div>
@@ -62,22 +62,22 @@
 <div id="content">
       
 <div class="page-heading alert alert-primary">
-<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/features/getapi.feature</span><span class="feature-description">GET API feature</span>
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/features/getapiwithquery.feature</span><span class="feature-description">GET API with Query Parameters</span>
 </div>
 <div class="scenario">
-<div class="scenario-heading" id="[1:19]">
+<div class="scenario-heading" id="[1:3]">
 <div class="heading-container">
 <div class="scenario-tags"></div>
-<span class="scenario-keyword">Scenario: [1:19]</span><span class="scenario-name">get user details - query </span>
+<span class="scenario-keyword">Scenario: [1:3]</span><span class="scenario-name">get all active users </span>
 </div>
-<div class="scenario-time passed">ms: 909</div>
+<div class="scenario-time passed">ms: 833</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="1">
 <div class="step-ref passed">1</div>
-<div class="step-cell passed">* def query = {name:'ABC', id: 1688, email:'XYZ@gmail.com'}</div>
+<div class="step-cell passed">* def query = {status:'active', gender: 'female', id:23}</div>
 </div>
-<div class="time-cell passed">3</div>
+<div class="time-cell passed">2</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="2">
@@ -98,22 +98,22 @@
 <div class="step-ref passed">4</div>
 <div class="step-cell passed">When method GET</div>
 </div>
-<div class="time-cell passed">903</div>
+<div class="time-cell passed">827</div>
 </div>
-<div class="preformatted" data-parent="4">21:33:58.582 request:
-1 &gt; GET https://gorest.co.in/public/v1/users?name=ABC&amp;id=1688&amp;email=XYZ%40gmail.com
+<div class="preformatted" data-parent="4">21:54:44.083 request:
+1 &gt; GET https://gorest.co.in/public/v1/users?status=active&amp;gender=female&amp;id=23
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: gorest.co.in
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_261)
 
-21:33:59.070 response time in milliseconds: 483.07
+21:54:44.568 response time in milliseconds: 480.90
 1 &lt; 200
 1 &lt; Cache-Control: max-age=0, private, must-revalidate
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Tue, 21 Dec 2021 16:03:58 GMT
-1 &lt; ETag: W/"6a49d4914632defbefa7cdc8810310af"
+1 &lt; Date: Tue, 21 Dec 2021 16:24:44 GMT
+1 &lt; ETag: W/"5562abb049aa112a1d9fa48dbcbeda35"
 1 &lt; Referrer-Policy: strict-origin-when-cross-origin
 1 &lt; Server: nginx
 1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
@@ -123,10 +123,10 @@
 1 &lt; X-Download-Options: noopen
 1 &lt; X-Frame-Options: SAMEORIGIN
 1 &lt; X-Permitted-Cross-Domain-Policies: none
-1 &lt; X-Request-Id: 3ef53aa7-f80b-4c42-882e-f6de2e77fac6
-1 &lt; X-Runtime: 0.006841
+1 &lt; X-Request-Id: 2fb55651-de58-4a1e-a1e9-e091c36c3228
+1 &lt; X-Runtime: 0.005469
 1 &lt; X-XSS-Protection: 0
-{"meta":{"pagination":{"total":1,"pages":1,"page":1,"limit":20,"links":{"previous":null,"current":"https://gorest.co.in/public/v1/users?page=1","next":null}}},"data":[{"id":1688,"name":"ABC","email":"XYZ@gmail.com","gender":"male","status":"active"}]}</div>
+{"meta":{"pagination":{"total":1,"pages":1,"page":1,"limit":20,"links":{"previous":null,"current":"https://gorest.co.in/public/v1/users?page=1","next":null}}},"data":[{"id":23,"name":"Chidaakaash Johar DDS","email":"chidaakaash_dds_johar@kihn.biz","gender":"female","status":"active"}]}</div>
 <div class="step-row">
 <div class="step-container" id="5">
 <div class="step-ref passed">5</div>
@@ -134,57 +134,88 @@
 </div>
 <div class="time-cell passed">0</div>
 </div>
-</div>
-<div class="scenario">
-<div class="scenario-heading" id="[2:26]">
-<div class="heading-container">
-<div class="scenario-tags"></div>
-<span class="scenario-keyword">Scenario: [2:26]</span><span class="scenario-name">get user details - query1 </span>
-</div>
-<div class="scenario-time passed">ms: 167</div>
-</div>
 <div class="step-row">
 <div class="step-container" id="6">
 <div class="step-ref passed">6</div>
-<div class="step-cell passed">* def query = {status:'active'}</div>
+<div class="step-cell passed">* print response</div>
 </div>
 <div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="6">21:54:44.570 [print] {
+  "data": [
+    {
+      "gender": "female",
+      "name": "Chidaakaash Johar DDS",
+      "id": 23,
+      "email": "chidaakaash_dds_johar@kihn.biz",
+      "status": "active"
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "total": 1,
+      "pages": 1,
+      "limit": 20,
+      "links": {
+        "next": null,
+        "current": "https://gorest.co.in/public/v1/users?page=1",
+        "previous": null
+      },
+      "page": 1
+    }
+  }
+}</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2:12]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [2:12]</span><span class="scenario-name">get all active users and get the count </span>
+</div>
+<div class="scenario-time passed">ms: 115</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="7">
 <div class="step-ref passed">7</div>
-<div class="step-cell passed">Given url baseUrl+'/public/v1/users'</div>
+<div class="step-cell passed">* def query = {status:'active'}</div>
 </div>
 <div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="8">
 <div class="step-ref passed">8</div>
-<div class="step-cell passed">And params query</div>
+<div class="step-cell passed">Given url baseUrl+'/public/v1/users'</div>
 </div>
 <div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="9">
 <div class="step-ref passed">9</div>
+<div class="step-cell passed">And params query</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
 <div class="step-cell passed">When method GET</div>
 </div>
-<div class="time-cell passed">155</div>
+<div class="time-cell passed">101</div>
 </div>
-<div class="preformatted" data-parent="9">21:33:59.079 request:
+<div class="preformatted" data-parent="10">21:54:44.577 request:
 1 &gt; GET https://gorest.co.in/public/v1/users?status=active
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: gorest.co.in
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_261)
 
-21:33:59.233 response time in milliseconds: 152.89
+21:54:44.676 response time in milliseconds: 98.01
 1 &lt; 200
 1 &lt; Cache-Control: max-age=0, private, must-revalidate
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Tue, 21 Dec 2021 16:03:59 GMT
-1 &lt; ETag: W/"6d14e4439eefef9cb027e14337768ea7"
+1 &lt; Date: Tue, 21 Dec 2021 16:24:44 GMT
+1 &lt; ETag: W/"b0292a638de384bb25c3d30331516977"
 1 &lt; Referrer-Policy: strict-origin-when-cross-origin
 1 &lt; Server: nginx
 1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
@@ -194,32 +225,32 @@
 1 &lt; X-Download-Options: noopen
 1 &lt; X-Frame-Options: SAMEORIGIN
 1 &lt; X-Permitted-Cross-Domain-Policies: none
-1 &lt; X-Request-Id: 8c206057-e8d7-423e-a6bf-5daa193d4516
-1 &lt; X-Runtime: 0.007275
+1 &lt; X-Request-Id: dac52a2d-f296-4fa4-b621-0c983fa5940c
+1 &lt; X-Runtime: 0.007270
 1 &lt; X-XSS-Protection: 0
-{"meta":{"pagination":{"total":1140,"pages":57,"page":1,"limit":20,"links":{"previous":null,"current":"https://gorest.co.in/public/v1/users?page=1","next":"https://gorest.co.in/public/v1/users?page=2"}}},"data":[{"id":1688,"name":"ABC","email":"XYZ@gmail.com","gender":"male","status":"active"},{"id":2078,"name":"Vladimir Kuzmitsky","email":"v.kuzmitsky@gmail.com","gender":"male","status":"active"},{"id":2079,"name":"Brandon Williamson","email":"Nettie97@yahoo.com","gender":"male","status":"active"},{"id":1691,"name":"Sharvari","email":"test@example.com","gender":"male","status":"active"},{"id":2080,"name":"Michael Poo","email":"1npxS1xOo5@mail.ru","gender":"male","status":"active"},{"id":2081,"name":"Hakobioos","email":"Hakobioos@gmaill.com","gender":"male","status":"active"},{"id":2082,"name":"Hakobiolos","email":"Hakobiooos@gmaill.com","gender":"male","status":"active"},{"id":12,"name":"Msgr. Tara Trivedi","email":"tara_trivedi_msgr@auer.co","gender":"male","status":"active"},{"id":13,"name":"Chaturaanan Kakkar","email":"kakkar_chaturaanan@yost.com","gender":"male","status":"active"},{"id":15,"name":"Chandani Embranthiri","email":"chandani_embranthiri@thompson-feeney.com","gender":"male","status":"active"},{"id":68,"name":"Balaji Petkar","email":"Lifeofrules@gmail.com","gender":"male","status":"active"},{"id":20,"name":"Chidambaram Tagore","email":"tagore_chidambaram@rogahn.info","gender":"female","status":"active"},{"id":21,"name":"Chandrakala Rana","email":"rana_chandrakala@hayes.io","gender":"female","status":"active"},{"id":23,"name":"Chidaakaash Johar DDS","email":"chidaakaash_dds_johar@kihn.biz","gender":"female","status":"active"},{"id":24,"name":"Kumar Pillai","email":"pillai_kumar@monahan.io","gender":"female","status":"active"},{"id":26,"name":"Sheela Butt","email":"sheela_butt@hand.com","gender":"female","status":"active"},{"id":27,"name":"Rakesh Acharya","email":"rakesh_acharya@kautzer.org","gender":"female","status":"active"},{"id":30,"name":"Mina Khatri","email":"khatri_mina@johns.info","gender":"female","status":"active"},{"id":33,"name":"Sloka Pillai","email":"sloka_pillai@green-boehm.com","gender":"male","status":"active"},{"id":34,"name":"Menka Shukla","email":"shukla_menka@jenkins.co","gender":"male","status":"active"}]}</div>
-<div class="step-row">
-<div class="step-container" id="10">
-<div class="step-ref passed">10</div>
-<div class="step-cell passed">Then status 200</div>
-</div>
-<div class="time-cell passed">0</div>
-</div>
+{"meta":{"pagination":{"total":1194,"pages":60,"page":1,"limit":20,"links":{"previous":null,"current":"https://gorest.co.in/public/v1/users?page=1","next":"https://gorest.co.in/public/v1/users?page=2"}}},"data":[{"id":1688,"name":"ABC","email":"XYZ@gmail.com","gender":"male","status":"active"},{"id":2078,"name":"Vladimir Kuzmitsky","email":"v.kuzmitsky@gmail.com","gender":"male","status":"active"},{"id":2079,"name":"Brandon Williamson","email":"Nettie97@yahoo.com","gender":"male","status":"active"},{"id":1691,"name":"Sharvari","email":"test@example.com","gender":"male","status":"active"},{"id":2080,"name":"Michael Poo","email":"1npxS1xOo5@mail.ru","gender":"male","status":"active"},{"id":2081,"name":"Hakobioos","email":"Hakobioos@gmaill.com","gender":"male","status":"active"},{"id":2082,"name":"Hakobiolos","email":"Hakobiooos@gmaill.com","gender":"male","status":"active"},{"id":12,"name":"Msgr. Tara Trivedi","email":"tara_trivedi_msgr@auer.co","gender":"male","status":"active"},{"id":13,"name":"Chaturaanan Kakkar","email":"kakkar_chaturaanan@yost.com","gender":"male","status":"active"},{"id":15,"name":"Chandani Embranthiri","email":"chandani_embranthiri@thompson-feeney.com","gender":"male","status":"active"},{"id":68,"name":"Balaji Petkar","email":"Lifeofrules@gmail.com","gender":"male","status":"active"},{"id":20,"name":"Chidambaram Tagore","email":"tagore_chidambaram@rogahn.info","gender":"female","status":"active"},{"id":21,"name":"Chandrakala Rana","email":"rana_chandrakala@hayes.io","gender":"female","status":"active"},{"id":23,"name":"Chidaakaash Johar DDS","email":"chidaakaash_dds_johar@kihn.biz","gender":"female","status":"active"},{"id":24,"name":"Kumar Pillai","email":"pillai_kumar@monahan.io","gender":"female","status":"active"},{"id":26,"name":"Sheela Butt","email":"sheela_butt@hand.com","gender":"female","status":"active"},{"id":27,"name":"Rakesh Acharya","email":"rakesh_acharya@kautzer.org","gender":"female","status":"active"},{"id":30,"name":"Mina Khatri","email":"khatri_mina@johns.info","gender":"female","status":"active"},{"id":33,"name":"Sloka Pillai","email":"sloka_pillai@green-boehm.com","gender":"male","status":"active"},{"id":34,"name":"Menka Shukla","email":"shukla_menka@jenkins.co","gender":"male","status":"active"}]}</div>
 <div class="step-row">
 <div class="step-container" id="11">
 <div class="step-ref passed">11</div>
-<div class="step-cell passed">* def jsonResponse = response</div>
+<div class="step-cell passed">Then status 200</div>
 </div>
 <div class="time-cell passed">0</div>
 </div>
 <div class="step-row">
 <div class="step-container" id="12">
 <div class="step-ref passed">12</div>
+<div class="step-cell passed">* def jsonResponse = response</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
 <div class="step-cell passed">* print jsonResponse</div>
 </div>
 <div class="time-cell passed">1</div>
 </div>
-<div class="preformatted" data-parent="12">21:33:59.235 [print] {
+<div class="preformatted" data-parent="13">21:54:44.678 [print] {
   "data": [
     {
       "gender": "male",
@@ -364,8 +395,8 @@
   ],
   "meta": {
     "pagination": {
-      "total": 1140,
-      "pages": 57,
+      "total": 1194,
+      "pages": 60,
       "limit": 20,
       "links": {
         "next": "https://gorest.co.in/public/v1/users?page=2",
@@ -377,20 +408,27 @@
   }
 }</div>
 <div class="step-row">
-<div class="step-container" id="13">
-<div class="step-ref passed">13</div>
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
 <div class="step-cell passed">* def userCount = jsonResponse.data.length</div>
 </div>
 <div class="time-cell passed">10</div>
 </div>
 <div class="step-row">
-<div class="step-container" id="14">
-<div class="step-ref passed">14</div>
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
 <div class="step-cell passed">* print userCount</div>
 </div>
 <div class="time-cell passed">0</div>
 </div>
-<div class="preformatted" data-parent="14">21:33:59.245 [print] 20</div>
+<div class="preformatted" data-parent="15">21:54:44.688 [print] 20</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
+<div class="step-cell passed">* match userCount == 20</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
 </div>
 </div>
     

@@ -1,17 +1,20 @@
-19:18:08.812 request:
+21:51:07.736 request:
 1 > GET https://gorest.co.in/public/v1/users/30
 1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 007526d9efdbc07e084ff7a6d4cfcc90588fbe20641c00faebf45a7f3b2eaf33
 1 > Connection: Keep-Alive
+1 > Content-Type: text/xml;charset=ISO-8859-1
+1 > Expect: 100-continue
 1 > Host: gorest.co.in
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_261)
+1 > User-Agent: Mozilla/4.0(compatible;IE;GACv7. 1. 5192. 22378)
 
-19:18:09.097 response time in milliseconds: 281.06
+21:51:07.957 response time in milliseconds: 217.65
 1 < 200
 1 < Cache-Control: max-age=0, private, must-revalidate
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Mon, 20 Dec 2021 13:48:09 GMT
-1 < ETag: W/"22ef31971731ae75bd067178b0f96d6d"
+1 < Date: Sun, 26 Dec 2021 16:21:07 GMT
+1 < ETag: W/"dbadebecbbe0cb78c3edb5447f2663fd"
 1 < Referrer-Policy: strict-origin-when-cross-origin
 1 < Server: nginx
 1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
@@ -21,47 +24,37 @@
 1 < X-Download-Options: noopen
 1 < X-Frame-Options: SAMEORIGIN
 1 < X-Permitted-Cross-Domain-Policies: none
-1 < X-Request-Id: cf9c2a06-74c3-41b1-b0be-401f48293f26
-1 < X-Runtime: 0.003746
+1 < X-Request-Id: 5ea60340-53df-4a1e-85a0-20ea64e37821
+1 < X-Runtime: 0.012406
 1 < X-XSS-Protection: 0
-{"meta":null,"data":{"id":30,"name":"Ainath","email":"ainath@gmail.com","gender":"male","status":"inactive"}}
+{"meta":null,"data":{"id":30,"name":"Bilwa Kaul II","email":"ii_bilwa_kaul@harvey.info","gender":"male","status":"inactive"}}
 
-19:18:09.101 [print] {
+21:51:07.961 [print] {
   "data": {
     "gender": "male",
-    "name": "Ainath",
+    "name": "Bilwa Kaul II",
     "id": 30,
-    "email": "ainath@gmail.com",
+    "email": "ii_bilwa_kaul@harvey.info",
     "status": "inactive"
   },
   "meta": null
 }
 
-19:18:09.101 [print] {
-  "data": {
-    "gender": "male",
-    "name": "Ainath",
-    "id": 30,
-    "email": "ainath@gmail.com",
-    "status": "inactive"
-  },
-  "meta": null
-}
-
-19:18:09.114 [print] Ainath
-19:18:09.130 request:
-1 > GET https://gorest.co.in/public/v1/users/1
+21:51:07.969 request:
+1 > GET https://gorest.co.in/public/v1/users/30
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
+1 > Content-Type: text/xml;charset=ISO-8859-1
 1 > Host: gorest.co.in
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_261)
+1 > User-Agent: Mozilla/4.0(compatible;IE;GACv7 1 5192 22378)
 
-19:18:09.185 response time in milliseconds: 52.87
-1 < 404
-1 < Cache-Control: no-cache
+21:51:08.236 response time in milliseconds: 266.24
+1 < 200
+1 < Cache-Control: max-age=0, private, must-revalidate
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Mon, 20 Dec 2021 13:48:09 GMT
+1 < Date: Sun, 26 Dec 2021 16:21:08 GMT
+1 < ETag: W/"dbadebecbbe0cb78c3edb5447f2663fd"
 1 < Referrer-Policy: strict-origin-when-cross-origin
 1 < Server: nginx
 1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
@@ -71,20 +64,221 @@
 1 < X-Download-Options: noopen
 1 < X-Frame-Options: SAMEORIGIN
 1 < X-Permitted-Cross-Domain-Policies: none
-1 < X-Request-Id: d2ab28e6-c8c6-47c5-9a12-40439c0caf69
-1 < X-Runtime: 0.003381
+1 < X-Request-Id: cc19acbd-62f1-43e4-86c6-6a6d43026826
+1 < X-Runtime: 0.003328
 1 < X-XSS-Protection: 0
-{"meta":null,"data":{"message":"Resource not found"}}
+{"meta":null,"data":{"id":30,"name":"Bilwa Kaul II","email":"ii_bilwa_kaul@harvey.info","gender":"male","status":"inactive"}}
 
-IGIN
+21:51:08.236 [print] {
+  "data": {
+    "gender": "male",
+    "name": "Bilwa Kaul II",
+    "id": 30,
+    "email": "ii_bilwa_kaul@harvey.info",
+    "status": "inactive"
+  },
+  "meta": null
+}
+
+21:51:08.243 request:
+1 > GET https://gorest.co.in/public/v1/users/30
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Type: text/xml;charset=ISO-8859-1
+1 > Host: gorest.co.in
+1 > User-Agent: Mozilla/4.0(compatible;IE;GACv7 1 5192 22378)
+
+21:51:08.332 response time in milliseconds: 88.72
+1 < 200
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 26 Dec 2021 16:21:08 GMT
+1 < ETag: W/"dbadebecbbe0cb78c3edb5447f2663fd"
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Server: nginx
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: [Accept-Encoding, Origin]
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
 1 < X-Permitted-Cross-Domain-Policies: none
-1 < X-Request-Id: 1ce5b760-b388-4e45-9d98-9c9e77debf08
-1 < X-Runtime: 0.003124
+1 < X-Request-Id: 3f937221-2abd-4ac5-b4ed-13748bd10516
+1 < X-Runtime: 0.003932
 1 < X-XSS-Protection: 0
-{"meta":null,"data":{"message":"Resource not found"}}
+{"meta":null,"data":{"id":30,"name":"Bilwa Kaul II","email":"ii_bilwa_kaul@harvey.info","gender":"male","status":"inactive"}}
 
-4
-1 < X-Runtime: 0.003428
-1 < X-XSS-Protection: 0
-{"meta":null,"data":{"message":"Resource not found"}}
+21:51:08.332 [print] {
+  "data": {
+    "gender": "male",
+    "name": "Bilwa Kaul II",
+    "id": 30,
+    "email": "ii_bilwa_kaul@harvey.info",
+    "status": "inactive"
+  },
+  "meta": null
+}
+
+":"tagore_chidambaram@rogahn.info","gender":"female","status":"active"},{"id":21,"name":"Chandrakala Rana","email":"rana_chandrakala@hayes.io","gender":"female","status":"active"},{"id":23,"name":"Chidaakaash Johar DDS","email":"chidaakaash_dds_johar@kihn.biz","gender":"female","status":"active"},{"id":24,"name":"Kumar Pillai","email":"pillai_kumar@monahan.io","gender":"female","status":"active"},{"id":26,"name":"Sheela Butt","email":"sheela_butt@hand.com","gender":"female","status":"active"},{"id":27,"name":"Rakesh Acharya","email":"rakesh_acharya@kautzer.org","gender":"female","status":"active"},{"id":30,"name":"Mina Khatri","email":"khatri_mina@johns.info","gender":"female","status":"active"},{"id":33,"name":"Sloka Pillai","email":"sloka_pillai@green-boehm.com","gender":"male","status":"active"},{"id":34,"name":"Menka Shukla","email":"shukla_menka@jenkins.co","gender":"male","status":"active"}]}
+
+21:54:44.678 [print] {
+  "data": [
+    {
+      "gender": "male",
+      "name": "ABC",
+      "id": 1688,
+      "email": "XYZ@gmail.com",
+      "status": "active"
+    },
+    {
+      "gender": "male",
+      "name": "Vladimir Kuzmitsky",
+      "id": 2078,
+      "email": "v.kuzmitsky@gmail.com",
+      "status": "active"
+    },
+    {
+      "gender": "male",
+      "name": "Brandon Williamson",
+      "id": 2079,
+      "email": "Nettie97@yahoo.com",
+      "status": "active"
+    },
+    {
+      "gender": "male",
+      "name": "Sharvari",
+      "id": 1691,
+      "email": "test@example.com",
+      "status": "active"
+    },
+    {
+      "gender": "male",
+      "name": "Michael Poo",
+      "id": 2080,
+      "email": "1npxS1xOo5@mail.ru",
+      "status": "active"
+    },
+    {
+      "gender": "male",
+      "name": "Hakobioos",
+      "id": 2081,
+      "email": "Hakobioos@gmaill.com",
+      "status": "active"
+    },
+    {
+      "gender": "male",
+      "name": "Hakobiolos",
+      "id": 2082,
+      "email": "Hakobiooos@gmaill.com",
+      "status": "active"
+    },
+    {
+      "gender": "male",
+      "name": "Msgr. Tara Trivedi",
+      "id": 12,
+      "email": "tara_trivedi_msgr@auer.co",
+      "status": "active"
+    },
+    {
+      "gender": "male",
+      "name": "Chaturaanan Kakkar",
+      "id": 13,
+      "email": "kakkar_chaturaanan@yost.com",
+      "status": "active"
+    },
+    {
+      "gender": "male",
+      "name": "Chandani Embranthiri",
+      "id": 15,
+      "email": "chandani_embranthiri@thompson-feeney.com",
+      "status": "active"
+    },
+    {
+      "gender": "male",
+      "name": "Balaji Petkar",
+      "id": 68,
+      "email": "Lifeofrules@gmail.com",
+      "status": "active"
+    },
+    {
+      "gender": "female",
+      "name": "Chidambaram Tagore",
+      "id": 20,
+      "email": "tagore_chidambaram@rogahn.info",
+      "status": "active"
+    },
+    {
+      "gender": "female",
+      "name": "Chandrakala Rana",
+      "id": 21,
+      "email": "rana_chandrakala@hayes.io",
+      "status": "active"
+    },
+    {
+      "gender": "female",
+      "name": "Chidaakaash Johar DDS",
+      "id": 23,
+      "email": "chidaakaash_dds_johar@kihn.biz",
+      "status": "active"
+    },
+    {
+      "gender": "female",
+      "name": "Kumar Pillai",
+      "id": 24,
+      "email": "pillai_kumar@monahan.io",
+      "status": "active"
+    },
+    {
+      "gender": "female",
+      "name": "Sheela Butt",
+      "id": 26,
+      "email": "sheela_butt@hand.com",
+      "status": "active"
+    },
+    {
+      "gender": "female",
+      "name": "Rakesh Acharya",
+      "id": 27,
+      "email": "rakesh_acharya@kautzer.org",
+      "status": "active"
+    },
+    {
+      "gender": "female",
+      "name": "Mina Khatri",
+      "id": 30,
+      "email": "khatri_mina@johns.info",
+      "status": "active"
+    },
+    {
+      "gender": "male",
+      "name": "Sloka Pillai",
+      "id": 33,
+      "email": "sloka_pillai@green-boehm.com",
+      "status": "active"
+    },
+    {
+      "gender": "male",
+      "name": "Menka Shukla",
+      "id": 34,
+      "email": "shukla_menka@jenkins.co",
+      "status": "active"
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "total": 1194,
+      "pages": 60,
+      "limit": 20,
+      "links": {
+        "next": "https://gorest.co.in/public/v1/users?page=2",
+        "current": "https://gorest.co.in/public/v1/users?page=1",
+        "previous": null
+      },
+      "page": 1
+    }
+  }
+}
+
+21:54:44.688 [print] 20
 

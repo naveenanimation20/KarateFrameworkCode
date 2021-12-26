@@ -1,0 +1,61 @@
+<testsuite failures="0" name="src/test/java/features/headers.feature" skipped="0" tests="3" time="0.942319">
+  <testcase classname="src.test.java.features.headers" name="pass the user request with headers_Part1" time="0.582267">
+    <system-out>Given header Content-Type = 'text/xml;charset=ISO-8859-1' ................. passed
+And header Accept-Encoding = 'gzip,deflate' ............................... passed
+And header Connection = 'Keep-Alive' ...................................... passed
+And header Expect = '100-continue' ........................................ passed
+And header User-Agent = 'Mozilla/4.0(compatible;IE;GACv7\. 1\. 5192\. 22378)' . passed
+And header Authorization = 'Bearer 007526d9efdbc07e084ff7a6d4cfcc90588fbe20641c00faebf45a7f3b2eaf33' . passed
+When url baseUrl+'/public/v1/users' ....................................... passed
+And path '30' ............................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.features.headers" name="pass the user request with headers_Part2" time="0.268923">
+    <system-out>Given header Content-Type = 'text/xml;charset=ISO-8859-1' ................. passed
+And header Accept-Encoding = 'gzip,deflate' ............................... passed
+And header Connection = 'Keep-Alive' ...................................... passed
+And header Expect = '100-continue' ........................................ passed
+And header User-Agent = 'Mozilla/4.0(compatible;IE;GACv7\. 1\. 5192\. 22378)' . passed
+And header Authorization = 'Bearer 007526d9efdbc07e084ff7a6d4cfcc90588fbe20641c00faebf45a7f3b2eaf33' . passed
+When url baseUrl+'/public/v1/users' ....................................... passed
+And path '30' ............................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* def request_headers = {Content-Type: 'text/xml;charset=ISO-8859-1', Connection: 'Keep-Alive', User-Agent: 'Mozilla/4.0(compatible;IE;GACv7\. 1\. 5192\. 22378)'} . passed
+Given headers request_headers ............................................. passed
+When url baseUrl+'/public/v1/users' ....................................... passed
+And path '30' ............................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.features.headers" name="pass the user request with headers_Part3" time="0.091129">
+    <system-out>Given header Content-Type = 'text/xml;charset=ISO-8859-1' ................. passed
+And header Accept-Encoding = 'gzip,deflate' ............................... passed
+And header Connection = 'Keep-Alive' ...................................... passed
+And header Expect = '100-continue' ........................................ passed
+And header User-Agent = 'Mozilla/4.0(compatible;IE;GACv7\. 1\. 5192\. 22378)' . passed
+And header Authorization = 'Bearer 007526d9efdbc07e084ff7a6d4cfcc90588fbe20641c00faebf45a7f3b2eaf33' . passed
+When url baseUrl+'/public/v1/users' ....................................... passed
+And path '30' ............................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* def request_headers = {Content-Type: 'text/xml;charset=ISO-8859-1', Connection: 'Keep-Alive', User-Agent: 'Mozilla/4.0(compatible;IE;GACv7\. 1\. 5192\. 22378)'} . passed
+Given headers request_headers ............................................. passed
+When url baseUrl+'/public/v1/users' ....................................... passed
+And path '30' ............................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* configure headers = {Content-Type: 'text/xml;charset=ISO-8859-1', Connection: 'Keep-Alive', User-Agent: 'Mozilla/4.0(compatible;IE;GACv7\. 1\. 5192\. 22378)'} . passed
+When url baseUrl+'/public/v1/users' ....................................... passed
+And path '30' ............................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+</testsuite>
