@@ -1,0 +1,15 @@
+<testsuite failures="0" name="src/test/java/features/postapi.feature" skipped="0" tests="1" time="0.754665">
+  <testcase classname="src.test.java.features.postapi" name="Create a user with the given data" time="0.754665">
+    <system-out>* url 'https://gorest.co.in' .............................................. passed
+* def requestPayload = .................................................... passed
+Given path '/public/v1/users' ............................................. passed
+And request requestPayload ................................................ passed
+And header Authorization = 'Bearer ' + tokenID ............................ passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+And match $.data.id == '#present' ......................................... passed
+And match $.data.name == '#present' ....................................... passed
+And match $.data.name == 'tom' ............................................ passed
+And match $.data.email == 'tom24@gmail.com' ............................... passed</system-out>
+  </testcase>
+</testsuite>

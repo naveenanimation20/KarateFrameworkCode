@@ -1,0 +1,10 @@
+<testsuite failures="0" name="src/test/java/features/AuthToken.feature" skipped="0" tests="1" time="0.873811">
+  <testcase classname="src.test.java.features.AuthToken" name="get user details" time="0.873811">
+    <system-out>* print tokenID ........................................................... passed
+Given header Authorization = 'Bearer '+ tokenID ........................... passed
+Given url baseUrl+'/public/v1/users' ...................................... passed
+And path '30' ............................................................. passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

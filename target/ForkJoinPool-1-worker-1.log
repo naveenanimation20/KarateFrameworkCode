@@ -1,47 +1,45 @@
-21:51:07.736 request:
-1 > GET https://gorest.co.in/public/v1/users/30
+20:17:25.109 [print] lKBlBSTHwF
+20:17:25.121 [print] {
+  "name": "tom",
+  "gender": "male",
+  "status": "active",
+  "email": "lKBlBSTHwF@gmail.com"
+}
+
+20:17:25.491 request:
+1 > POST https://gorest.co.in/public/v1/users
 1 > Accept-Encoding: gzip,deflate
 1 > Authorization: Bearer 007526d9efdbc07e084ff7a6d4cfcc90588fbe20641c00faebf45a7f3b2eaf33
 1 > Connection: Keep-Alive
-1 > Content-Type: text/xml;charset=ISO-8859-1
-1 > Expect: 100-continue
+1 > Content-Length: 79
+1 > Content-Type: application/json; charset=UTF-8
 1 > Host: gorest.co.in
-1 > User-Agent: Mozilla/4.0(compatible;IE;GACv7. 1. 5192. 22378)
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_261)
+{"name":"tom","gender":"male","status":"active","email":"lKBlBSTHwF@gmail.com"}
 
-21:51:07.957 response time in milliseconds: 217.65
-1 < 200
+20:17:25.895 response time in milliseconds: 401.50
+1 < 201
 1 < Cache-Control: max-age=0, private, must-revalidate
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Sun, 26 Dec 2021 16:21:07 GMT
-1 < ETag: W/"dbadebecbbe0cb78c3edb5447f2663fd"
+1 < Date: Thu, 30 Dec 2021 14:47:25 GMT
+1 < ETag: W/"6a7c507c13e83c0869c970538456df6e"
+1 < Location: https://gorest.co.in/public/v1/users/6663
 1 < Referrer-Policy: strict-origin-when-cross-origin
 1 < Server: nginx
 1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
 1 < Transfer-Encoding: chunked
-1 < Vary: [Accept-Encoding, Origin]
+1 < Vary: Origin
 1 < X-Content-Type-Options: nosniff
 1 < X-Download-Options: noopen
 1 < X-Frame-Options: SAMEORIGIN
 1 < X-Permitted-Cross-Domain-Policies: none
-1 < X-Request-Id: 5ea60340-53df-4a1e-85a0-20ea64e37821
-1 < X-Runtime: 0.012406
+1 < X-Request-Id: 042c772c-7379-4654-9601-7c63550e1f7f
+1 < X-Runtime: 0.018166
 1 < X-XSS-Protection: 0
-{"meta":null,"data":{"id":30,"name":"Bilwa Kaul II","email":"ii_bilwa_kaul@harvey.info","gender":"male","status":"inactive"}}
+{"meta":null,"data":{"id":6663,"name":"tom","email":"lKBlBSTHwF@gmail.com","gender":"male","status":"active"}}
 
-21:51:07.961 [print] {
-  "data": {
-    "gender": "male",
-    "name": "Bilwa Kaul II",
-    "id": 30,
-    "email": "ii_bilwa_kaul@harvey.info",
-    "status": "inactive"
-  },
-  "meta": null
-}
-
-21:51:07.969 request:
-1 > GET https://gorest.co.in/public/v1/users/30
+c/v1/users/30
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Content-Type: text/xml;charset=ISO-8859-1
