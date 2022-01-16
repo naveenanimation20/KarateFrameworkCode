@@ -2,7 +2,7 @@ Feature: Create user using post api
 
 Background:
 	* url 'https://gorest.co.in'
-	
+
 	* def random_string = 
 	"""
 		function(s){
@@ -24,7 +24,9 @@ Background:
         "status": "active"
     }	
 	"""
-	  * requestPayload.email = randomString + "@gmail.com"
+	 # * requestPayload.email = randomString + "@gmail.com"
+	  * set requestPayload.email = randomString + "@gmail.com"
+	  
     * print requestPayload
 	
 Scenario: Create a user with the given data

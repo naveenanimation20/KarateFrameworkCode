@@ -1,12 +1,12 @@
-20:17:25.109 [print] lKBlBSTHwF
-20:17:25.121 [print] {
+14:32:26.807 [print] osLkkPLlPP
+14:32:26.815 [print] {
   "name": "tom",
   "gender": "male",
   "status": "active",
-  "email": "lKBlBSTHwF@gmail.com"
+  "email": "osLkkPLlPP@gmail.com"
 }
 
-20:17:25.491 request:
+14:32:27.133 request:
 1 > POST https://gorest.co.in/public/v1/users
 1 > Accept-Encoding: gzip,deflate
 1 > Authorization: Bearer 007526d9efdbc07e084ff7a6d4cfcc90588fbe20641c00faebf45a7f3b2eaf33
@@ -15,16 +15,16 @@
 1 > Content-Type: application/json; charset=UTF-8
 1 > Host: gorest.co.in
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_261)
-{"name":"tom","gender":"male","status":"active","email":"lKBlBSTHwF@gmail.com"}
+{"name":"tom","gender":"male","status":"active","email":"osLkkPLlPP@gmail.com"}
 
-20:17:25.895 response time in milliseconds: 401.50
+14:32:28.627 response time in milliseconds: 1492.33
 1 < 201
 1 < Cache-Control: max-age=0, private, must-revalidate
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Thu, 30 Dec 2021 14:47:25 GMT
-1 < ETag: W/"6a7c507c13e83c0869c970538456df6e"
-1 < Location: https://gorest.co.in/public/v1/users/6663
+1 < Date: Sun, 16 Jan 2022 10:32:28 GMT
+1 < ETag: W/"ab32704018ba4f49b49c2eb39156f91c"
+1 < Location: https://gorest.co.in/public/v1/users/1703
 1 < Referrer-Policy: strict-origin-when-cross-origin
 1 < Server: nginx
 1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
@@ -34,15 +34,13 @@
 1 < X-Download-Options: noopen
 1 < X-Frame-Options: SAMEORIGIN
 1 < X-Permitted-Cross-Domain-Policies: none
-1 < X-Request-Id: 042c772c-7379-4654-9601-7c63550e1f7f
-1 < X-Runtime: 0.018166
-1 < X-XSS-Protection: 0
-{"meta":null,"data":{"id":6663,"name":"tom","email":"lKBlBSTHwF@gmail.com","gender":"male","status":"active"}}
+1 < X-Request-Id: 02992b4c-4433-48ba-901c-3794ba9d0303
+1 < X-Runtime: 0.014061
+1 < X-XSS-Protection: 1; mode=block
+{"meta":null,"data":{"id":1703,"name":"tom","email":"osLkkPLlPP@gmail.com","gender":"male","status":"active"}}
 
-c/v1/users/30
-1 > Accept-Encoding: gzip,deflate
-1 > Connection: Keep-Alive
-1 > Content-Type: text/xml;charset=ISO-8859-1
+ath: $.data.email, actual: 'cjYVrIgiDd@gmail.com', expected: 'tom24@gmail.com', reason: not equal
+SO-8859-1
 1 > Host: gorest.co.in
 1 > User-Agent: Mozilla/4.0(compatible;IE;GACv7 1 5192 22378)
 

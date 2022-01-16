@@ -1,10 +1,9 @@
-<testsuite failures="0" name="src/test/java/features/randommail.feature" skipped="0" tests="1" time="0.907971">
-  <testcase classname="src.test.java.features.randommail" name="Create a user with the given data" time="0.907971">
+<testsuite failures="0" name="src/test/java/features/postjson.feature" skipped="0" tests="1" time="1.793809">
+  <testcase classname="src.test.java.features.postjson" name="Create a user with the given data" time="1.793809">
     <system-out>* url 'https://gorest.co.in' .............................................. passed
 * def random_string = ..................................................... passed
 * def randomString = random_string(10) .................................... passed
-* print randomString ...................................................... passed
-* def requestPayload = .................................................... passed
+* def requestPayload = read('classpath:src/test/resources/user.json') ..... passed
 * set requestPayload.email = randomString + "@gmail.com" .................. passed
 * print requestPayload .................................................... passed
 Given path '/public/v1/users' ............................................. passed

@@ -2,7 +2,6 @@ Feature: Create user using post api
 
 Background:
 	* url 'https://gorest.co.in'
-
 	* def random_string = 
 	"""
 		function(s){
@@ -16,19 +15,13 @@ Background:
 	* def randomString = random_string(10)
 	* print randomString
 	
-	* def requestPayload = 
-	"""
-	{
-        "name": "tom",
-        "gender": "male",
-        "status": "active"
-    }	
-	"""
-	 # * requestPayload.email = randomString + "@gmail.com"
-	  * set requestPayload.email = randomString + "@gmail.com"
-	  
-    * print requestPayload
+	* def requestPayload = read('classpath:src/test/resources/payload/user.json')
 	
+	* set requestPayload.email = randomString + "@gmail.com"
+	  
+  * print requestPayload
+	
+
 Scenario: Create a user with the given data
 Given path '/public/v1/users'	
 And request requestPayload
